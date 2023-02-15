@@ -1,1 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
 
+</head>
+<body>
+    <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+        <footer>When painting a room, preparation is key. The actual painting should account for about 40% of the work.</footer>
+    </div>
+    <div class="nav" id="toolbar">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="purple"></div>
+        <div class="clr" data-clr="yellowgreen"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="#fff"></div>
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+        <input type="color" value="#FFFFFF" id="favColor">
+        <input type="range" name="inputName" id="inputId" value="5" min="1" max="10" >
+        <output id="outputId"></output>
+        <div class="emoji">&#127912</div>
+    </div>
+
+    <script src="App.js" ></script>
+</body>
+</html>
