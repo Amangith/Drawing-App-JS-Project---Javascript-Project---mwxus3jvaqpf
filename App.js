@@ -83,3 +83,13 @@ canvas.addEventListener("mouseup", (e) => {
 
 canvas.addEventListener("mousemove", draw);
 
+const foot = document.getElementById("footer")
+
+fetch('https://api.adviceslip.com/advice').then(response => {
+    return response.json();
+}).then(adviceData => {
+    const adviceObj = adviceData.slip;
+    foot.innerHTML = adviceObj.advice;
+}).catch(error => {
+    console.log(error);
+})
